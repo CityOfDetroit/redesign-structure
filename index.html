@@ -12,20 +12,388 @@
     <!--endbuild-->
   </head>
   <body>
-    <section>
-      <h1>Header</h1>
-      <article class="">
-        Top Links menu
-      </article>
-      <article class="">
-        Logo
-      </article>
-    </section>
-    <section>
-      <h1>Alert</h1>
-    </section>
-    <section>
-      <h1>Breadcrumbs</h1>
-    </section>
+    <div class="alert-overlay">
+      <div class="alert-content">
+        <span class="close">x</span>
+        <div class="img-container">
+          <img src="img/content-entities-map.png" alt="content entities">
+        </div>
+      </div>
+    </div>
+    <main>
+      <section>
+        <h1>Header</h1>
+        <article class="">
+          <input type="checkbox" id="top-links" class="drop-down"/>
+          <label for="top-links" class="drop-down-label">
+            Top links menu
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> System</li>
+              <li><strong>Fields:</strong>
+                <ul>
+                  <li>Name</li>
+                  <li>Link</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <input type="checkbox" id="logo" class="drop-down"/>
+          <label for="logo" class="drop-down-label">
+            Logo
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> System</li>
+              <li><strong>Fields:</strong>
+                <ul>
+                  <li>Image</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <input type="checkbox" id="search" class="drop-down"/>
+          <label for="search" class="drop-down-label">
+            Search
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Search API module</li>
+              <li><strong>Fields:</strong>
+                <ul>
+                  <li>Input</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <input type="checkbox" id="language" class="drop-down"/>
+          <label for="language" class="drop-down-label">
+            Language
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Language Module</li>
+              <li><strong>Fields:</strong>
+                <ul>
+                  <li>Input</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <input type="checkbox" id="menu" class="drop-down"/>
+          <label for="menu" class="drop-down-label">
+            Menu
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> System</li>
+              <li><strong>Fields:</strong>
+                <ul>
+                  <li>Name</li>
+                  <li>Links</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h1>Alert</h1>
+        <article class="">
+          <input type="checkbox" id="status-message" class="drop-down"/>
+          <label for="status-message" class="drop-down-label">
+            Status message
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> System</li>
+              <li><strong>Notes:</strong>
+                <ul>
+                  <li>Generated automatically by drupal, only displays in the backend.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <input type="checkbox" id="alert" class="drop-down"/>
+          <label for="alert" class="drop-down-label">
+            Site alert
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Block view</li>
+              <li><strong>Contenty type:</strong> <a href="#">Alert</a>
+                <ul>
+                  <li><strong>Fields:</strong>
+                    <ul>
+                      <li>Name : String</li>
+                      <li>Body : Limited HTML</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><strong>Notes:</strong>
+                <ul>
+                  <li>Managed with scheduling module.</li>
+                  <li>Orphan content.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h1>Breadcrumbs</h1>
+        <article class="">
+          <input type="checkbox" id="breadcrumbs" class="drop-down"/>
+          <label for="breadcrumbs" class="drop-down-label">
+            Breadcrumbs
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> System</li>
+              <li><strong>Notes:</strong>
+                <ul>
+                  <li>Built by taxonomy structure.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <div class="row">
+        <div class="container">
+          <section>
+            <h1>Side bar left</h1>
+          </section>
+          <section>
+            <h1>Left sub menu</h1>
+          </section>
+        </div>
+        <section>
+          <h1>Content</h1>
+          <article class="">
+            <input type="checkbox" id="home-action-btns" class="drop-down"/>
+            <label for="home-action-btns" class="drop-down-label">
+              Home action buttons
+            </label>
+            <div class="">
+              <ul>
+                <li><strong>Block type:</strong> Block view</li>
+                <li><strong>Filter view by:</strong> Home Page.</li>
+                <li><strong>Content type:</strong> <a href="#">Action button</a>
+                  <ul>
+                    <li><strong>Fields:</strong>
+                      <ul>
+                        <li>Name : String(25 char)</li>
+                        <li>Description : String(50 char)</li>
+                        <li>Icon : Image</li>
+                        <li>Tag : Taxonomy
+                          <ul>
+                            <li>Department</li>
+                            <li>Home page</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><strong>Notes:</strong>
+                  <ul>
+                    <li>Action buttons should be only services and no sign up to mailing list, to prevent repetition.</li>
+                    <li>Add "More" button that links to a view page with all the action buttons for all the debartments and city.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="">
+            <input type="checkbox" id="dept-action-btns" class="drop-down"/>
+            <label for="dept-action-btns" class="drop-down-label">
+              Department action buttons
+            </label>
+            <div class="">
+              <ul>
+                <li><strong>Block type:</strong> Block view</li>
+                <li><strong>Filter view by:</strong> Department</li>
+                <li><strong>Content type:</strong> <a href="#">Action button</a>
+                  <ul>
+                    <li><strong>Fields:</strong>
+                      <ul>
+                        <li>Name : String(25 char)</li>
+                        <li>Description : String(50 char)</li>
+                        <li>Icon : Image</li>
+                        <li>Tag : Taxonomy
+                          <ul>
+                            <li>Department</li>
+                            <li>Home page</li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li><strong>Notes:</strong>
+                  <ul>
+                    <li>Action buttons should be only services and no sign up to mailing list, to prevent repetition.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="">
+            <input type="checkbox" id="local" class="drop-down"/>
+            <label for="local" class="drop-down-label">
+              Make it local
+            </label>
+            <div class="">
+              <ul>
+                <li><strong>Block type:</strong> Custom block</li>
+                <li><strong>Notes:</strong>
+                  <ul>
+                    <li>Needs to be build, possibly not available on first release.</li>
+                    <li>It will search all content with available geolocation.</li>
+                    <li>Filter by proximity range.</li>
+                    <li>Filter by Neighborhood or district (opt)</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </article>
+          <article class="">
+            <input type="checkbox" id="main-content" class="drop-down"/>
+            <label for="main-content" class="drop-down-label">
+              Main content
+            </label>
+            <div class="">
+              <ul>
+                <li><strong>Block type:</strong> System</li>
+                <li><strong>Notes:</strong>
+                  <ul>
+                    <li>Displays content associated with content types and taxonomies by default.</li>
+                    <li>It will display the description of the current page. Ex. Department description and sub-departments.</li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </article>
+        </section>
+        <div class="container">
+          <section>
+            <h1>Side bar right</h1>
+            <article class="">
+              <input type="checkbox" id="contact" class="drop-down"/>
+              <label for="contact" class="drop-down-label">
+                Contacts
+              </label>
+              <div class="">
+                <ul>
+                  <li><strong>Block type:</strong> Block view</li>
+                  <li><strong>Filter view by:</strong> Department</li>
+                  <li><strong>Content type:</strong> <a href="#">Contact</a>
+                    <ul>
+                      <li><strong>Fields:</strong>
+                        <ul>
+                          <li>Name : String (25 char)</li>
+                          <li>Position : String (50 char)</li>
+                          <li>Phone : String (12 char)</li>
+                          <li>Email : String (100 char)</li>
+                          <li>Tag : Taxonomy
+                            <ul>
+                              <li>Department</li>
+                              <li>Main or extra (opt)</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>Content type:</strong> <a href="#">Location</a>
+                    <ul>
+                      <li><strong>Fields:</strong>
+                        <ul>
+                          <li>Name : String (100 char)</li>
+                          <li>Hours : String</li>
+                          <li>Address : String</li>
+                          <li>Tag : Taxonomy
+                            <ul>
+                              <li>Department</li>
+                              <li>Main or extra (opt)</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>Notes:</strong>
+                    <ul>
+                      <li>Use tag to keep track of which contacts get displayed on the contact section and which go into the Extras.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </article>
+            <article class="">
+              <input type="checkbox" id="social" class="drop-down"/>
+              <label for="social" class="drop-down-label">
+                Social media
+              </label>
+              <div class="">
+                <ul>
+                  <li><strong>Block type:</strong> Block view</li>
+                  <li><strong>Filter view by:</strong> Department</li>
+                  <li><strong>Content type:</strong> <a href="#">Social Media</a>
+                    <ul>
+                      <li><strong>Fields:</strong>
+                        <ul>
+                          <li>Name : String (25 char)</li>
+                          <li>Type : Predefined list</li>
+                          <li>Link : String</li>
+                          <li>Tag : Taxonomy
+                            <ul>
+                              <li>Department</li>
+                              <li>Main or extra (opt)</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>Notes:</strong>
+                    <ul>
+                      <li>Use tag to keep track of which contacts get displayed on the contact section and which go into the Extras.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </section>
+          <section>
+            <h1>Right sub menu</h1>
+          </section>
+        </div>
+      </div>
+    </main>
+    <script>
+      var links = document.querySelectorAll('a');
+      links.forEach(function(link){
+        link.addEventListener('click', function(){
+          document.querySelector('.alert-overlay').className = 'alert-overlay active';
+        });
+      });
+      document.querySelector('.close').addEventListener('click', function(){
+        document.querySelector('.alert-overlay').className = 'alert-overlay';
+      });
+    </script>
   </body>
 </html>

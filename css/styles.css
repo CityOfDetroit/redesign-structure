@@ -1,6 +1,63 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:300,300i,700,900');
-body { margin:0; padding:2em; font-family: 'Montserrat', sans-serif; font-weight: lighter;}
+body { margin:0; font-family: 'Montserrat', sans-serif; font-weight: lighter; position: relative;}
 h1,h2,h3,h4,h5{font-weight: bold; margin: 0;}
+main{padding: 2em;}
+img{width: 100%;}
+a{color: #c92929}
+ul{padding-left: 1em;}
+.alert-overlay{
+  display: none;
+}
+.alert-overlay.active{
+  display: block;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  z-index: 2;
+}
+.alert-content{
+  width: 80%;
+  margin: auto;
+  padding: 2em;
+  background-color: #fff;
+  position: relative;
+}
+.img-container{
+  width: 100%;
+}
+.close{
+  position: absolute;
+  top: -1em;
+  right: -1em;
+  padding: .5em .75em;
+  background-color: red;
+  color: #fff;
+  font-size: 1.25em;
+  cursor: pointer;
+}
+.row{display: flex}
+.container{flex: 1;}
+.row > section{
+  width: 40%;
+  margin-left: 1em;
+  margin-right: 1em;
+  flex-wrap: wrap;
+}
+.row > section > article{
+  width: calc(100% - 2em);
+  flex: none;
+  margin-bottom: 1em;
+}
+.container > section{
+  flex-wrap: wrap;
+}
+.container > section > article{
+  width: calc(100% - 2em);
+  flex: none;
+  margin-bottom: 1em;
+}
 section{
   position: relative;
   padding: 1em;
@@ -11,7 +68,7 @@ section{
 section h1{
   position: absolute;
   top: -.65em;
-  left: 2em;
+  left: 1em;
   background-color: #fff;
 }
 section > article{
@@ -22,4 +79,19 @@ section > article{
 }
 section > article:last-child{
   margin-right: 0;
+}
+section > article > div{
+  display: none;
+}
+.drop-down{
+  display: none;
+}
+.drop-down:checked ~ div {
+	display: block;
+  transition: all .2s ease-in-out;
+  background-color: #fff;
+  padding: .5em;
+}
+.drop-down-label{
+  cursor: pointer;
 }

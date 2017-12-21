@@ -20,6 +20,82 @@
         </div>
       </div>
     </div>
+    <div class="alert-overlay-1">
+      <div class="alert-content">
+        <span class="close-1">x</span>
+        <div class="taxonomy-tree">
+          <h2>Taxonomy</h2>
+          <ul>
+            <li><h5>Departments</h5>
+              <ul>
+                <li>Airport</li>
+                <li>Appeals and Hearings</li>
+                <li>Building, Safety, Engineering, and Environmental</li>
+                <li>Civil Rights, Inclusion & Opportunities</li>
+                <li>etc...</li>
+              </ul>
+            </li>
+            <li><h5>Government</h5>
+              <li>Mayor</li>
+              <li>City Clerk</li>
+              <li>City council
+                <ul>
+                  <li>At large 1</li>
+                  <li>At Large 2</li>
+                  <li>District 1</li>
+                  <li>District 2</li>
+                  <li>District 3</li>
+                  <li>District 4</li>
+                  <li>District 5</li>
+                  <li>District 6</li>
+                  <li>District 7</li>
+                </ul>
+              </li>
+            </li>
+            <li><h5>Relations</h5>
+              <ul>
+                <li>Home Page</li>
+                <li>Featured</li>
+                <li>Main</li>
+                <li>Extra</li>
+              </ul>
+            </li>
+            <li><h5>Events</h5>
+              <ul>
+                <li>Youth</li>
+                <li>Teen</li>
+                <li>Senior</li>
+                <li>Entretainment</li>
+                <li>Government</li>
+              </ul>
+            </li>
+            <li><h5>Guides</h5>
+              <ul>
+                <li>Businesses
+                  <ul>
+                    <li>Start Guide</li>
+                    <li>Development</li>
+                    <li>Partner with the City</li>
+                    <li>etc...</li>
+                  </ul>
+                </li>
+                <li>Residents
+                  <ul>
+                    <li>Help with home</li>
+                    <li>Job Training</li>
+                    <li>Neighborhoods</li>
+                    <li>etc...</li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><h5>Audiences</h5></li>
+            <li><h5>Initiatives</h5></li>
+            <li><h5>Interactions</h5></li>
+          </ul>
+        </div>
+      </div>
+    </div>
     <main>
       <section>
         <h1>Header</h1>
@@ -132,7 +208,7 @@
           <div class="">
             <ul>
               <li><strong>Block type:</strong> Block view</li>
-              <li><strong>Contenty type:</strong> <a href="#">Alert</a>
+              <li><strong>Contenty type:</strong> <a href="#entity">Alert</a>
                 <ul>
                   <li><strong>Fields:</strong>
                     <ul>
@@ -191,14 +267,14 @@
               <ul>
                 <li><strong>Block type:</strong> Block view</li>
                 <li><strong>Filter view by:</strong> Home Page.</li>
-                <li><strong>Content type:</strong> <a href="#">Action button</a>
+                <li><strong>Content type:</strong> <a href="#entity">Action button</a>
                   <ul>
                     <li><strong>Fields:</strong>
                       <ul>
                         <li>Name : String(25 char)</li>
                         <li>Description : String(50 char)</li>
                         <li>Icon : Image</li>
-                        <li>Tag : Taxonomy
+                        <li><a href="#tax">Tag : Taxonomy</a>
                           <ul>
                             <li>Department</li>
                             <li>Home page</li>
@@ -226,14 +302,14 @@
               <ul>
                 <li><strong>Block type:</strong> Block view</li>
                 <li><strong>Filter view by:</strong> Department</li>
-                <li><strong>Content type:</strong> <a href="#">Action button</a>
+                <li><strong>Content type:</strong> <a href="#entity">Action button</a>
                   <ul>
                     <li><strong>Fields:</strong>
                       <ul>
                         <li>Name : String(25 char)</li>
                         <li>Description : String(50 char)</li>
                         <li>Icon : Image</li>
-                        <li>Tag : Taxonomy
+                        <li><a href="#tax">Tag : Taxonomy</a>
                           <ul>
                             <li>Department</li>
                             <li>Home page</li>
@@ -300,7 +376,7 @@
                 <ul>
                   <li><strong>Block type:</strong> Block view</li>
                   <li><strong>Filter view by:</strong> Department</li>
-                  <li><strong>Content type:</strong> <a href="#">Contact</a>
+                  <li><strong>Content type:</strong> <a href="#entity">Contact</a>
                     <ul>
                       <li><strong>Fields:</strong>
                         <ul>
@@ -308,7 +384,7 @@
                           <li>Position : String (50 char)</li>
                           <li>Phone : String (12 char)</li>
                           <li>Email : String (100 char)</li>
-                          <li>Tag : Taxonomy
+                          <li><a href="#tax">Tag : Taxonomy</a>
                             <ul>
                               <li>Department</li>
                               <li>Main or extra (opt)</li>
@@ -318,14 +394,14 @@
                       </li>
                     </ul>
                   </li>
-                  <li><strong>Content type:</strong> <a href="#">Location</a>
+                  <li><strong>Content type:</strong> <a href="#entity">Location</a>
                     <ul>
                       <li><strong>Fields:</strong>
                         <ul>
                           <li>Name : String (100 char)</li>
                           <li>Hours : String</li>
                           <li>Address : String</li>
-                          <li>Tag : Taxonomy
+                          <li><a href="#tax">Tag : Taxonomy</a>
                             <ul>
                               <li>Department</li>
                               <li>Main or extra (opt)</li>
@@ -352,14 +428,14 @@
                 <ul>
                   <li><strong>Block type:</strong> Block view</li>
                   <li><strong>Filter view by:</strong> Department</li>
-                  <li><strong>Content type:</strong> <a href="#">Social Media</a>
+                  <li><strong>Content type:</strong> <a href="#entity">Social Media</a>
                     <ul>
                       <li><strong>Fields:</strong>
                         <ul>
                           <li>Name : String (25 char)</li>
                           <li>Type : Predefined list</li>
                           <li>Link : String</li>
-                          <li>Tag : Taxonomy
+                          <li><a href="#tax">Tag : Taxonomy</a>
                             <ul>
                               <li>Department</li>
                               <li>Main or extra (opt)</li>
@@ -380,12 +456,599 @@
           </section>
           <section>
             <h1>Right sub menu</h1>
+            <article class="">
+              <input type="checkbox" id="sub-menu" class="drop-down"/>
+              <label for="sub-menu" class="drop-down-label">
+                Sub Menu
+              </label>
+              <div class="">
+                <ul>
+                  <li><strong>Block type:</strong> Block view</li>
+                  <li><strong>Content:</strong> <a href="#entity">Taxonomy</a>
+                    <ul>
+                      <li><strong>Fields:</strong>
+                        <ul>
+                          <li>Name : String</li>
+                          <li>Description : String</li>
+                          <li>Summary : String (150 char)</li>
+                          <li>Anchor link : String</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                  <li><strong>Notes:</strong>
+                    <ul>
+                      <li>Pull the children of the current taxonomy node if available.</li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </article>
           </section>
         </div>
       </div>
+      <section>
+        <h1>News & Events</h1>
+        <article class="">
+          <input type="checkbox" id="news-events" class="drop-down"/>
+          <label for="news-events" class="drop-down-label">
+            News & Events
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Block view</li>
+              <li><strong>Content type:</strong> <a href="#entity">News</a>
+                <ul>
+                  <li><strong>Fields:</strong>
+                    <ul>
+                      <li>Title : String</li>
+                      <li>Description : String</li>
+                      <li>Start date : Timestamp</li>
+                      <li>End date : Timestamp</li>
+                      <li>Image : PNG,JPG,SVG</li>
+                      <li>Location : String</li>
+                      <li>Summary : String (150 char)</li>
+                      <li><a href="#tax">Tag : Taxonomy</a>
+                        <ul>
+                          <li>Department</li>
+                          <li>Category</li>
+                          <li>Feature type</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><strong>Content type:</strong> <a href="#entity">Events</a>
+                <ul>
+                  <li><strong>Fields:</strong>
+                    <ul>
+                      <li>Title : String</li>
+                      <li>Description : String</li>
+                      <li>Start date : Timestamp</li>
+                      <li>End date : Timestamp</li>
+                      <li>Image : PNG,JPG,SVG</li>
+                      <li>Location : String</li>
+                      <li>Summary : String (150 char)</li>
+                      <li><a href="#tax">Tag : Taxonomy</a>
+                        <ul>
+                          <li>Department</li>
+                          <li>Age group</li>
+                          <li>Category</li>
+                          <li>Feature type</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h1>Featured & Latest</h1>
+        <article class="">
+          <input type="checkbox" id="featured" class="drop-down"/>
+          <label for="featured" class="drop-down-label">
+            Featured
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Block view</li>
+              <li><strong>Content:</strong> All content that has the specific tag with "Featured" and "Department."</li>
+              <li><strong>Content type:</strong> <a href="#entity">Open data</a>
+                <ul>
+                  <li><strong>Fields:</strong>
+                    <ul>
+                      <li>Name : String</li>
+                      <li>Description : String</li>
+                      <li>Published date : Timestamp</li>
+                      <li>Last updated : Timestamp</li>
+                      <li>Data fields : List</li>
+                      <li><a href="#tax">Tag : Taxonomy</a>
+                        <ul>
+                          <li>Department</li>
+                          <li>Home page</li>
+                          <li>Categories</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><strong>Notes:</strong>
+                <ul>
+                  <li>Open data content type is possibly a new content type that link to featured block.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <input type="checkbox" id="latest" class="drop-down"/>
+          <label for="latest" class="drop-down-label">
+            Latest
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Block view</li>
+              <li><strong>Content:</strong> All content that has been created or updated recently and filter by entity.</li>
+              <li><strong>Notes:</strong>
+                <ul>
+                  <li>This could include Media content like files, forms and videos.</li>
+                  <li>Use the taxonomy of each content item to filter by department or home page.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h1>Extras</h1>
+        <article class="">
+          <input type="checkbox" id="contacts-overflow" class="drop-down"/>
+          <label for="contacts-overflow" class="drop-down-label">
+            Contacts overflow
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Block view</li>
+              <li><strong>Content type:</strong> <a href="#entity">Contact</a>
+                <ul>
+                  <li><strong>Fields:</strong>
+                    <ul>
+                      <li>Name : String (25 char)</li>
+                      <li>Position : String (50 char)</li>
+                      <li>Phone : String (12 char)</li>
+                      <li>Email : String (100 char)</li>
+                      <li><a href="#tax">Tag : Taxonomy</a>
+                        <ul>
+                          <li>Department</li>
+                          <li>Main or extra (opt)</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li><strong>Content type:</strong> <a href="#entity">Location</a>
+                <ul>
+                  <li><strong>Fields:</strong>
+                    <ul>
+                      <li>Name : String (100 char)</li>
+                      <li>Hours : String</li>
+                      <li>Address : String</li>
+                      <li><a href="#tax">Tag : Taxonomy</a>
+                        <ul>
+                          <li>Department</li>
+                          <li>Main or extra (opt)</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <input type="checkbox" id="social-overflow" class="drop-down"/>
+          <label for="social-overflow" class="drop-down-label">
+            Social overflow
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Block view</li>
+              <li><strong>Content type:</strong> <a href="#entity">Social Media</a>
+                <ul>
+                  <li><strong>Fields:</strong>
+                    <ul>
+                      <li>Name : String (25 char)</li>
+                      <li>Type : Predefined list</li>
+                      <li>Link : String</li>
+                      <li><a href="#tax">Tag : Taxonomy</a>
+                        <ul>
+                          <li>Department</li>
+                          <li>Main or extra (opt)</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h1>Highlights</h1>
+        <article class="">
+          <input type="checkbox" id="highlights" class="drop-down"/>
+          <label for="highlights" class="drop-down-label">
+            Highlights
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Block view</li>
+              <li><strong>Content type:</strong> <a href="#entity">Highlight</a>
+                <ul>
+                  <li><strong>Fields:</strong>
+                    <ul>
+                      <li>Name : String</li>
+                      <li>Body : Full HTML content</li>
+                      <li><a href="#tax">Tag : Taxonomy</a>
+                        <ul>
+                          <li>Department</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h1>Media</h1>
+        <article class="">
+          <input type="checkbox" id="media" class="drop-down"/>
+          <label for="media" class="drop-down-label">
+            Video
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Block view</li>
+              <li><strong>Content type:</strong> <a href="#entity">Media - Video</a>
+                <ul>
+                  <li><strong>Fields:</strong>
+                    <ul>
+                      <li>Name : String</li>
+                      <li>Image : Image</li>
+                      <li>Video URL : String</li>
+                      <li><a href="#tax">Tag : Taxonomy</a>
+                        <ul>
+                          <li>Department</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h1>Sub Sections</h1>
+        <article class="">
+          <input type="checkbox" id="sub-section" class="drop-down"/>
+          <label for="sub-section" class="drop-down-label">
+            Sub Sections
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Block view</li>
+              <li><strong>Content:</strong> Pull all the children of the current taxonomy and their summaries.</li>
+              <li><strong>Content type:</strong> <a href="#entity">Taxonomy entity</a>
+                <ul>
+                  <li><strong>Fields:</strong>
+                    <ul>
+                      <li>Name : String</li>
+                      <li>Image : Image</li>
+                      <li>Office : String</li>
+                      <li>Link : String</li>
+                      <li>Description : String</li>
+                      <li>Summary : String (100 char)</li>
+                      <li>Anchor link : String</li>
+                      <li>Title(s)</li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h1>Full Width Content</h1>
+        <article class="">
+          <input type="checkbox" id="to-do" class="drop-down"/>
+          <label for="to-do" class="drop-down-label">
+            Things to Do
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Custom Block</li>
+              <li><strong>Content:</strong>
+                <ul>
+                  <li><strong>Youth button:</strong> Link to block view
+                    <ul>
+                      <li><strong>Content type:</strong> <a href="#entity">Event</a></li>
+                      <li>Tagged youth</li>
+                    </ul>
+                  </li>
+                  <li><strong>Teen button:</strong> Link to block view
+                    <ul>
+                      <li><strong>Content type:</strong> <a href="#entity">Event</a></li>
+                      <li>Tagged teen</li>
+                    </ul>
+                  </li>
+                  <li><strong>Adult button:</strong> Link to block view
+                    <ul>
+                      <li><strong>Content type:</strong> <a href="#entity">Event</a></li>
+                      <li>Tagged adult</li>
+                    </ul>
+                  </li>
+                  <li><strong>Block view</strong>
+                    <ul>
+                      <li><strong>Content:</strong> All upcoming events.</li>
+                      <li><strong>Content type:</strong> <a href="#entity">Event</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <input type="checkbox" id="business" class="drop-down"/>
+          <label for="business" class="drop-down-label">
+            Doing Business in Detroit
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Custom Block</li>
+              <li><strong>Content:</strong>
+                <ul>
+                  <li><strong>Quick start button:</strong> Link to quick start node
+                    <ul>
+                      <li><strong>Content type:</strong> <a href="#entity">Taxonomy entity</a></li>
+                    </ul>
+                  </li>
+                  <li><strong>Development button:</strong> Link to development node
+                    <ul>
+                      <li><strong>Content type:</strong> <a href="#entity">Taxonomy entity</a></li>
+                    </ul>
+                  </li>
+                  <li><strong>Partner button:</strong> Link to partner node
+                    <ul>
+                      <li><strong>Content type:</strong> <a href="#entity">Taxonomy entity</a></li>
+                    </ul>
+                  </li>
+                  <li><strong>Block view</strong>
+                    <ul>
+                      <li><strong>Content type:</strong> <a href="#entity">Story</a></li>
+                      <li><strong>Fields:</strong>
+                        <ul>
+                          <li>Name : String</li>
+                          <li>Image : Image</li>
+                          <li>Body : Partial HTML content</li>
+                          <li>Short name : String (100 char)</li>
+                          <li><a href="#tax">Tag : Taxonomy</a>
+                            <ul>
+                              <li>Guide</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <input type="checkbox" id="opportunities" class="drop-down"/>
+          <label for="opportunities" class="drop-down-label">
+            Detroit Opportunities
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Custom Block</li>
+              <li><strong>Content:</strong>
+                <ul>
+                  <li><strong>Help with home button:</strong> Link to quick help with home node
+                    <ul>
+                      <li><strong>Content type:</strong> <a href="#entity">Taxonomy entity</a></li>
+                    </ul>
+                  </li>
+                  <li><strong>Job training button:</strong> Link to job training node
+                    <ul>
+                      <li><strong>Content type:</strong> <a href="#entity">Taxonomy entity</a></li>
+                    </ul>
+                  </li>
+                  <li><strong>Neighborhood button:</strong> Link to Neighborhood node
+                    <ul>
+                      <li><strong>Content type:</strong> <a href="#entity">Taxonomy entity</a></li>
+                    </ul>
+                  </li>
+                  <li><strong>Block view</strong>
+                    <ul>
+                      <li><strong>Content type:</strong> <a href="#entity">Story</a></li>
+                      <li><strong>Fields:</strong>
+                        <ul>
+                          <li>Name : String</li>
+                          <li>Image : Image</li>
+                          <li>Body : Partial HTML content</li>
+                          <li>Short name : String (100 char)</li>
+                          <li><a href="#tax">Tag : Taxonomy</a>
+                            <ul>
+                              <li>Guide</li>
+                            </ul>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <input type="checkbox" id="channels" class="drop-down"/>
+          <label for="channels" class="drop-down-label">
+            Detroit Government
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Custom Block</li>
+              <li><strong>Content:</strong>
+                <ul>
+                  <li>Links to all the city channels.</li>
+                  <li>Mayor - Block view
+                    <ul>
+                      <li><strong>Content Type:</strong> <a href="#entity">Taxonomy entity</a></li>
+                    </ul>
+                  </li>
+                  <li>Mayor events - Block view
+                    <ul>
+                      <li><strong>Content Type:</strong> <a href="#entity">Event</a></li>
+                    </ul>
+                  </li>
+                  <li>Clerk - Block view
+                    <ul>
+                      <li><strong>Content Type:</strong> <a href="#entity">Taxonomy entity</a></li>
+                    </ul>
+                  </li>
+                  <li>Clerk events - Block view
+                    <ul>
+                      <li><strong>Content Type:</strong> <a href="#entity">Event</a></li>
+                    </ul>
+                  </li>
+                  <li>Council - Block view
+                    <ul>
+                      <li><strong>Content:</strong> All the children under Council taxonomy (Dist 1, Dist 2, etc)</li>
+                    </ul>
+                  </li>
+                  <li>Council events - Block view
+                    <ul>
+                      <li><strong>Content Type:</strong> <a href="#entity">Event</a></li>
+                    </ul>
+                  </li>
+                  <li>Department button - Links to Department page view.</li>
+                  <li>Boards and Commissions - Link to Board and Commissions page view.</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <input type="checkbox" id="home-news" class="drop-down"/>
+          <label for="home-news" class="drop-down-label">
+            Home News & Twitter
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Custom Block</li>
+              <li><strong>Content:</strong> Full HTML content</li>
+              <li>Created and manage by the webteam.</li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section>
+        <h1>Footer</h1>
+        <article class="">
+          <input type="checkbox" id="sign" class="drop-down"/>
+          <label for="sign" class="drop-down-label">
+            Sign Up
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Custom Block</li>
+              <li><strong>Content:</strong> Full HTML content</li>
+              <li><strong>Notes:</strong>
+                <ul>
+                  <li>Possibly look at gov delivery API. (Karl) lol</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <input type="checkbox" id="logo-2" class="drop-down"/>
+          <label for="logo-2" class="drop-down-label">
+            Logo
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> System</li>
+              <li><strong>Fields:</strong>
+                <ul>
+                  <li>Image</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <input type="checkbox" id="social-footer" class="drop-down"/>
+          <label for="social-footer" class="drop-down-label">
+            Social media Home
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Block view</li>
+              <li><strong>Filter view by:</strong> Home page</li>
+              <li><strong>Content type:</strong> <a href="#entity">Social Media</a>
+                <ul>
+                  <li><strong>Fields:</strong>
+                    <ul>
+                      <li>Name : String (25 char)</li>
+                      <li>Type : Predefined list</li>
+                      <li>Link : String</li>
+                      <li><a href="#tax">Tag : Taxonomy</a>
+                        <ul>
+                          <li>Home page</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="">
+          <input type="checkbox" id="copyright" class="drop-down"/>
+          <label for="copyright" class="drop-down-label">
+            Copyright & Mobile apps
+          </label>
+          <div class="">
+            <ul>
+              <li><strong>Block type:</strong> Custom Block</li>
+              <li><strong>Content:</strong> Full HTML content</li>
+            </ul>
+          </div>
+        </article>
+      </section>
     </main>
     <script>
-      var links = document.querySelectorAll('a');
+      var links = document.querySelectorAll('a[href="#entity"]');
       links.forEach(function(link){
         link.addEventListener('click', function(){
           document.querySelector('.alert-overlay').className = 'alert-overlay active';
@@ -393,6 +1056,15 @@
       });
       document.querySelector('.close').addEventListener('click', function(){
         document.querySelector('.alert-overlay').className = 'alert-overlay';
+      });
+      var taxLinks = document.querySelectorAll('a[href="#tax"]');
+      taxLinks.forEach(function(link){
+        link.addEventListener('click', function(){
+          document.querySelector('.alert-overlay-1').className = 'alert-overlay-1 active';
+        });
+      });
+      document.querySelector('.close-1').addEventListener('click', function(){
+        document.querySelector('.alert-overlay-1').className = 'alert-overlay-1';
       });
     </script>
   </body>

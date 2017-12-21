@@ -5,12 +5,12 @@ main{padding: 2em;}
 img{width: 100%;}
 a{color: #c92929}
 ul{padding-left: 1em;}
-.alert-overlay{
+.alert-overlay,.alert-overlay-1{
   display: none;
 }
-.alert-overlay.active{
+.alert-overlay.active,.alert-overlay-1.active{
   display: block;
-  position: absolute;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100vh;
@@ -27,7 +27,7 @@ ul{padding-left: 1em;}
 .img-container{
   width: 100%;
 }
-.close{
+.close,.close-1{
   position: absolute;
   top: -1em;
   right: -1em;

@@ -24,6 +24,9 @@ ul{padding-left: 1em;}
   background-color: #fff;
   position: relative;
 }
+.taxonomy-tree{
+  overflow-y: auto;
+}
 .img-container{
   width: 100%;
 }
